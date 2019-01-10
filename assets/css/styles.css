@@ -1,0 +1,10 @@
+.your-score, .guess-value {
+  color: red;
+  text-align: center;
+  font-size: 40px;
+  text-emphasis: bols;
+}
+
+body{
+  text-align: center;
+}
