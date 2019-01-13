@@ -12,7 +12,7 @@
 var gemOne = 0;
 var gemTwo = 0;
 var gemThree = 0 ;
-var gemFour = 0 ;
+var gemFour = 0;
 var userScore = 0;
 var wins = 0;
 var losses = 0;
@@ -21,7 +21,6 @@ var isGameRunning = false
 
 
 $(document).ready(function() {
-  
 // get random number for start of game
 function getRandomNum(min ,max) {
   return Math.floor(Math.random()*(max- min+1)+min); 
@@ -74,14 +73,14 @@ $('#gemFour').on("click", function() {
 // check for win or loose
 checkWin = function() {
   if(userScore === randomNum){
-    alert("winner")
+   // alert("winner")
     wins++
     startNew()
     //console.log("rand: " + randomNum)
     // test()
   } 
   if ( userScore > randomNum){
-    alert("looser")
+    //alert("looser")
     losses++
     startNew()
     //console.log("rand: " + randomNum)
@@ -97,7 +96,7 @@ startNew = function(){
   gemThree = gemThreeRand(1,12);
   gemFour = gemFourRand(1,12);
   userScore = 0; 
-  test()
+  //test()
   $('#wins').text('Wins: ' + wins);
   $('#loose').text('Losses: ' + losses);
   $('#guess-value').text(randomNum);
@@ -116,6 +115,4 @@ startNew = function(){
 // 
 });
 
-//console.log('Score:' + userScore)
-
-// display wins and losses 
+// issues  wins go to 1 at start
